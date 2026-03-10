@@ -1,11 +1,14 @@
 #import "@preview/quick-maths:0.2.1": *
 
+#show smallcaps: set text(font: "Libertinus Serif")
+
 #let obl(name) = smallcaps[#name]
 #let ol(s) = text(fill: blue)[#s]
 #let op(s) = text(fill: blue, weight: "bold")[#s]
 #let err(s) = text(fill: red)[#s]
 
 #let uniq = $iota.inv$
+#let st = $#h(0.24em) . #h(0.24em)$
 
 #let mismatch = err("mismatch")
 #let underflow = err("underflow")
@@ -33,6 +36,8 @@
   ($[]$, $square$),
   ($||$, $arrow.b$),
 )
+
+#let bigstep = $arrow.b.double$
 
 #let sfaulty = obl("Faulty")
 #let sconfig = obl("Config")
