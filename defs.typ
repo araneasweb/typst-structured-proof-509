@@ -6,6 +6,7 @@
 #let ol(s) = text(fill: blue)[#s]
 #let op(s) = text(fill: blue, weight: "bold")[#s]
 #let err(s) = text(fill: red)[#s]
+#let boxed(body) = box(stroke: 0.8pt, inset: 0.4em, body)
 
 #let uniq = $iota.inv$
 #let st = $#h(0.24em) . #h(0.24em)$
@@ -57,6 +58,8 @@
 #let sredux = obl("Redux")
 #let stype = obl("Type")
 #let ssafe = obl("Safe")
+#let serr = obl("Err")
+#let sredex = obl("Redex")
 
 #let ttrue = ol("true")
 #let tfalse = ol("false")
