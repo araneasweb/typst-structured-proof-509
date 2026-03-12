@@ -9,6 +9,7 @@
 #let Pick = smallcaps[Pick]
 #let New = smallcaps[New]
 #let Claim = smallcaps[Claim]
+#let Define = smallcaps[Define]
 
 #let omitted = [_Proof Omitted_]
 #let qed = [Q.E.D.]
@@ -39,6 +40,8 @@
 #let pick(content) = stepkind(Pick, content)
 #let claim(content) = stepkind(Claim, content)
 #let step(num, content) = stepkind([#num], content, spacer: [.])
+#let slet(content) = stepkind(Let, content)
+#let define(content) = stepkind(Define, content)
 
 #let by = "by"
 #let intros = smallcaps[INTROS]
