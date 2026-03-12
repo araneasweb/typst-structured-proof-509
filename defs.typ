@@ -19,7 +19,6 @@
 #let finto = stack("fin", $harpoon.rt$)
 #let pto = $harpoon.rt$
 #let dto = stack("dens", $->$)
-// #let len = idk what this is
 #let sugardef = $class("relation", : =)$
 #let tuple(k) = $chevron.l k chevron.r$
 
@@ -29,8 +28,8 @@
 #let setfor = $class("binary", text(weight: "bold", "for"))$
 
 #let lequiv = $class("large", "equiv")$
-
 #let vdots = $dots.v$
+#let ltrue = $top$
 
 #show math.equation: shorthands.with(
   ($|-->$, $arrow.r.long.bar$),
@@ -42,7 +41,7 @@
 
 #let sfaulty = obl("Faulty")
 #let sconfig = obl("Config")
-#let soutcome = obl("outcome")
+#let soutcome = obl("Obs")
 #let sderiv = obl("Deriv")
 #let sderivof = obl("DerivOf")
 #let sstxtree = obl("StxTree")
@@ -60,13 +59,25 @@
 #let ssafe = obl("Safe")
 #let serr = obl("Err")
 #let sredex = obl("Redex")
+#let sloc = obl("Loc")
+#let sstore = obl("Store")
+#let sstmt = obl("Stmt")
 
 #let ttrue = ol("true")
 #let tfalse = ol("false")
 #let tif = ol("if")
 #let tthen = ol("then")
 #let telse = ol("else")
+#let twhile = ol("while")
+#let tdo = ol("do")
+#let tskip = ol("skip")
 
 #let tsucc(t) = ol("succ") + text()[(#t)]
 #let tpred(t) = ol("pred") + text()[(#t)]
 #let tzeroh(t) = ol("zero?") + text()[(#t)]
+
+#let evalba = $op("eval")_"BA"$
+#let evalbs = $op("eval")_"bs"$
+#let evalss = $op("eval")_"ss"$
+#let evalop = $op("eval")$
+#let dvgbs = $op("div")$
