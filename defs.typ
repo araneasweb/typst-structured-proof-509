@@ -38,6 +38,7 @@
 )
 
 #let bigstep = $arrow.b.double$
+#let dvgbs = $arrow.t.double$
 
 #let sfaulty = obl("Faulty")
 #let sconfig = obl("Config")
@@ -63,6 +64,11 @@
 #let sstore = obl("Store")
 #let sstmt = obl("Stmt")
 
+#let oplus = op("+")
+#let ominus = op("+")
+#let otimes = op($times$)
+#let odiv = op($div$)
+
 #let ttrue = ol("true")
 #let tfalse = ol("false")
 #let tif = ol("if")
@@ -80,4 +86,3 @@
 #let evalbs = $op("eval")_"bs"$
 #let evalss = $op("eval")_"ss"$
 #let evalop = $op("eval")$
-#let dvgbs = $op("div")$
