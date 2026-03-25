@@ -52,6 +52,7 @@
 #let CCfg = smallcaps[CCfg]
 #let BExp = smallcaps[BExp]
 #let AExp = smallcaps[AExp]
+#let Var = smallcaps[Var]
 
 #let bigsteps = $arrow.b.double$
 #let bigstep = $(bullet bigsteps bullet)$
@@ -62,6 +63,10 @@
 #let msteps = $ssteps #h(-0.25em) ast.basic med$
 #let mstep = $(bullet msteps bullet)$
 #let diverges = $arrow.t.double$
+#let nsubst(x, y, t) = $[x |=> y]t$
+#let nsubstitution = $[bullet |=> bullet]bullet$
+#let alphaeq = $attach(tilde, br: alpha)$
+#let alepheq = $attach(approx, br: aleph)$
 
 #let atom(name) = text(blue)[#name]
 #let a0 = atom("0")
@@ -81,6 +86,7 @@
 #let ado = atom("do")
 #let askip = atom("skip")
 #let whiledo(cond, body) = $awhile #cond ado #body$
+#let alambda = atom(sym.lambda)
 
 #let error(name) = text(red)[#name]
 #let emismatch = error("mismatch")
