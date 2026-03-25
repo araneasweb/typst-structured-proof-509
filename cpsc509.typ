@@ -63,7 +63,7 @@
 #let msteps = $ssteps #h(-0.25em) ast.basic med$
 #let mstep = $(bullet msteps bullet)$
 #let diverges = $arrow.t.double$
-#let nsubst(x, y, t) = $[x |=> y]t$
+#let nsubst(x, y, t) = $[#x |=> #y]#t$
 #let nsubstitution = $[bullet |=> bullet]bullet$
 #let alphaeq = $attach(tilde, br: alpha)$
 #let alepheq = $attach(approx, br: aleph)$
