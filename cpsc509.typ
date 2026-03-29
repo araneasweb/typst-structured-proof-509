@@ -128,3 +128,4 @@
 #let impP = [$=>$P]
 #let forallP = [$forall$P]
 #let existsP = [$exists$P]
+#let st = $#h(0.24em) . #h(0.24em)$
